@@ -1,2 +1,2 @@
 # japanese-coffee-house
-A japanese restaurant website
+A responsive restaurant website showcasing Japanese food
