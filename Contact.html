@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Japanese Coffee House - Contact</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src= "./store.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="img/restaurant_logo.png" width="246.5" height="96.5" alt="logo">
+            </a>
+
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About Us.html">About Us</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li>
+                    <a href="Reference.html">Reference</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contact_container">
+
+            <div class="contact_col1">
+                <h1>Contact Us</h1>
+                <hr>
+                <p class="reservation_message">Feel free to call us for reservations or for takeout order!</p>
+                <h2>Sunway</h2>
+                <div class="contact_address">
+                    <div class="address-col1">
+                        <div class="location_logo">
+                            <img src="img/location.png" width="50" height="50" alt="location">
+                        </div>
+                        <div class="email_logo">
+                            <img src="img/email.png" width="50" height="50" alt="email">
+                        </div>
+                        <div class="phone_logo">
+                            <img src="img/telephone.png" width="50" height="50" alt="phone">
+                        </div>
+                    </div>
+
+                    <div class="address-col2">
+                        <p class="contact_address_name">5, Jalan Universiti, Bandar Sunway, 47500 Petaling Jaya,
+                            Selangor</p>
+                        <p class="contact_emailID">contact@japanesecoffehouse.com</p>
+                        <p class="contact_PhoneID">123-123-1234</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact_col2">
+                <img src="img/map.jpg" alt="map">
+            </div>
+
+            <div class="contact_col3">
+                <h1>Feedback</h1>
+                <hr>
+                <p class="reservation_message">Provide us with your feedback!</p>
+                <form id="contact-form" method="post" action="/">
+                    <div class="contact-input">
+                        <input id="username" name="username" type="text" placeholder="Name">
+                        <span class="error"></span>
+                    </div>
+                    <div class="contact-input">
+                        <input id="email" name="email" type="text" placeholder="Email">
+                        <span class="error"></span>
+                    </div>
+                    <div class="contact-input">
+                        <textarea id="contact-message" name="contact-message" placeholder="Message"></textarea>
+                        <span class="error"></span>
+                    </div>
+                    <div class="contact-input">
+                        <input type="submit" class="form_submit_button" value="SEND MESSAGE" >
+                    </div>
+                </form>   
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+
+        <div class="col-1">
+            <a href="index.html" class="footer_logo">
+                <img src="img/restaurant_logo.png" width="221.85" height="86.85" alt="logo">
+            </a>
+
+            <div class="social">
+                <a href="https://www.facebook.com/SunwayUniversity/"><img src="img/facebook.png" witdth="25" height="25"
+                        alt="facebook"></a>
+                <a href="https://twitter.com/sunwayu"><img src="img/twitter-sign.png" witdth="25" height="25"
+                        alt="twitter"></a>
+                <a href="https://www.youtube.com/c/SunwayEducationGroup"><img src="img/youtube.png" witdth="25"
+                        height="25" alt="youtube"></a>
+                <a href="https://www.instagram.com/sunwayuniversity/"><img src="img/instagram.png" witdth="25"
+                        height="25" alt="instagram"></a>
+            </div>
+        </div>
+
+        <div class="col-2">
+            <a href="index.html">Home</a>
+            <a href="About Us.html">About Us</a>
+            <a href="Menu.html">Menu</a>
+            <a href="Contact.html">Contact</a>
+            <a href="Reference.html">Reference</a>
+        </div>
+
+        <div class="col-4">
+            <h3>Opening Hours</h3>
+            <p>Monday - Thursday: 3:00-9:00 pm</p>
+            <p>Friday - Saturday: 3:00-11:00 pm</p>
+            <p>Sunday: 3:00 - 10:00 pm</p>
+
+        </div>
+
+        <div class="col-3">
+            <small>**Additional RM4 is charged for takeaways order</small><br>
+            <small><i>Copyright &copy; 2022 Japanese Coffee House</i></small>
+        </div>
+    </footer>
+</body>

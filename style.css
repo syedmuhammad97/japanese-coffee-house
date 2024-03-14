@@ -1,0 +1,741 @@
+* {
+	font-size: 100%;
+	box-sizing: border-box;
+	font-family: Arial, Verdana, sans-serif;
+	text-decoration: none;
+	list-style: none;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.0;
+	background-color: beige;
+}
+
+html,
+body {
+	overflow-x: hidden;
+}
+
+header {
+	background-color: beige;
+}
+
+nav {
+	position: sticky;
+	top: 0;
+	right: 0;
+	width: 100%;
+	padding: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: transparent;
+	transition: ease .40s;
+}
+
+.navbar {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+}
+
+.navbar a {
+	color: #BB2403;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 18px;
+	letter-spacing: 1px;
+	padding: 10px 20px;
+	margin: 0px 5px;
+	transition: all .40s ease;
+}
+
+.navbar a:hover {
+	background: red;
+	color: whitesmoke;
+}
+
+main {
+	min-height: calc(100vh - 147.5px - 163.84px);
+}
+
+.welcome_page {
+	background: url(img/welcome_banner.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 10px 20px;
+	margin: 0px 5px;
+	width: 100%;
+	height: 400px;
+
+}
+
+.welcome_page h2 {
+	text-align: center;
+	font-size: 24px;
+	color: whitesmoke;
+	padding: 150px;
+	z-index: -1;
+}
+
+footer {
+	background-color: palevioletred;
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.social {
+	margin-top: 30px;
+}
+
+.social a {
+	padding: 10px;
+	cursor: pointer;
+}
+
+.col-1 {
+	padding: 24px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.col-2 {
+	padding: 24px;
+	flex-wrap: wrap;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.col-2 a {
+	text-align: left;
+	color: #BB2403;
+	font-weight: bold;
+	font-size: 18px;
+	margin: 0px 5px;
+	letter-spacing: 1px;
+}
+
+.col-2 a:hover {
+	background: red;
+	color: whitesmoke;
+}
+
+.col-3 {
+	padding: 24px;
+	flex-wrap: wrap;
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: end;
+	margin-left: auto;
+}
+
+.col-3 small {
+	text-align: left;
+	color: #BB2403;
+	font-weight: bold;
+	font-size: small;
+}
+
+.col-4 {
+	padding: 24px;
+	flex-wrap: wrap;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.col-4 h3 {
+	text-align: left;
+	color: #BB2403;
+	font-weight: bold;
+	font-size: 18px;
+	margin: 0px 5px;
+	letter-spacing: 1px;
+}
+
+.col-4 p {
+	text-align: left;
+	color: rgb(5, 5, 59);
+	font-weight: 100;
+	margin: 0px 5px;
+	letter-spacing: 1px;
+}
+
+form {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.home_welcome_message {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.home_welcome_message p {
+	color: #BB2403;
+	font-weight: bold;
+	font-size: 25px;
+	text-align: center;
+	padding: 24px;
+}
+
+.home_message {
+	margin-left: 10%;
+}
+
+.home_container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.home_message h1 {
+	font-size: 50px;
+	font-weight: 100;
+	margin-bottom: 15px;
+	padding: 40px;
+	color: #BB2403;
+}
+
+.home_message p {
+	font-size: 20px;
+	margin-top: -45px;
+	margin-bottom: 15px;
+	padding: 40px;
+	color: rgb(5, 5, 59);
+}
+
+.contact_container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.contact_col1 {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid red;
+	background-color: antiquewhite;
+	padding: 24px;
+	margin: 24px;
+}
+
+.contact_col3 {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid red;
+	background-color: antiquewhite;
+	padding: 24px;
+	max-width: 600px;
+	margin: 24px;
+}
+
+.contact_col2 {
+	margin: 20px 25px 20px 25px
+}
+
+.contact_container h1 {
+	font-size: 30px;
+	font-weight: 100;
+	padding-top: 24px;
+	padding-bottom: 5px;
+	text-align: center;
+}
+
+ .form_row{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.form_input{
+	flex-basis: 40%;
+}
+
+input{
+	width: 250px;
+	border-radius: 8px;
+	padding: 5px;
+}
+
+.contact_col3 textarea {
+	width: 100%;
+	font-size: 20px;
+	height: 200px;
+	padding: 10px;
+	border: 2px solid #E3E3E3;
+	outline-color: lightgreen;
+	border-radius: 5px;
+	resize: none;
+}
+
+.contact_col3 input {
+	width: 100%;
+	font-size: 20px;
+	padding: 10px;
+	border: 2px solid #E3E3E3;
+	outline-color: lightgreen;
+	border-radius: 5px;
+}
+
+/* .top{
+	height: 50px;
+	width: 100%;
+	margin-bottom: 25px;
+}
+
+.middle{
+	height: 70px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+ */
+/* .contact-input textarea {
+	margin-bottom: 10px;
+} */
+
+/* .bottom{
+	width: 100%;
+	margin-bottom: 30px;
+} */
+
+.contact-input{
+	width:100%;
+	margin-bottom: 25px;
+}
+
+.contact-input span{
+	font-size: 14px;
+	color: red;
+} 
+
+
+
+
+.form_submit_button{
+	background-color: palevioletred;
+}
+
+.reservation_message {
+	text-align: center;
+}
+
+.contact_col1 h2 {
+	font-size: 25px;
+	font-weight: 100;
+	color: #BB2403;
+	padding: 10px;
+}
+
+.contact_container hr {
+	background-color: red;
+	width: 50%;
+	border: none;
+	height: 5px;
+	margin-top: 0;
+}
+
+.location_logo {
+	padding: 10px;
+}
+
+.email_logo {
+	padding: 10px;
+}
+
+.phone_logo {
+	padding: 10px;
+}
+
+.contact_address {
+	display: flex;
+	flex-direction: row;
+}
+
+.address_col1 {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact_address_name {
+	padding: 5px;
+}
+
+.contact_emailID {
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 40px;
+}
+
+.contact_PhoneID {
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 40px;
+}
+
+.about_us_message {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	max-height: 390px;
+}
+
+.about_us_message h1 {
+	font-size: 50px;
+	font-weight: 100;
+	color: #BB2403;
+}
+
+.about_us_message p {
+	font-weight: 100;
+	font-size: 25px;
+	padding: 100px;
+	padding-top: 0px;
+	letter-spacing: 1px;
+	line-height: 30px;
+	color: rgb(5, 5, 59);
+}
+
+.mission {
+	overflow: auto;
+	max-height: 390px;
+	justify-content: center;
+}
+
+.about_us_container {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: center;
+	padding: 24px;
+}
+
+.left_about_us_container {
+	width: 50%;
+	height: 680px;
+	background-image: url(img/Katsu_Curry.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 8px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.right_about_us_container {
+	width: 50%;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #2e3b3b;
+	min-height: 350px;
+	max-height: 600px;
+	align-items: center;
+	justify-content: center;
+	padding: 30px;
+	border-radius: 8px;
+	margin: -100px;
+	overflow: auto;
+}
+
+.right_about_us_container h2 {
+	font-size: 30px;
+	font-weight: 100;
+	color: #BB2403;
+}
+
+.right_about_us_container p {
+	line-height: 30px;
+	color: antiquewhite;
+	max-height: 600px;
+}
+
+.right_about_us_container p span {
+	color: red;
+}
+
+.menu_message {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	max-height: 390px;
+}
+
+.menu_message h1 {
+	font-size: 50px;
+	font-weight: 100;
+	color: #BB2403;
+}
+
+.menu_message p {
+	font-weight: 100;
+	font-size: 25px;
+	padding: 100px;
+	padding-top: 0px;
+	padding-bottom: 5px;
+	letter-spacing: 1px;
+	line-height: 30px;
+	color: rgb(5, 5, 59)
+}
+
+.menu_statement {
+	overflow: auto;
+	max-height: 390px;
+	justify-content: center;
+}
+
+.menu_container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 50px;
+	padding-top: 5px;
+}
+
+.menu_container h1 {
+	letter-spacing: 2px;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.menu_col1,
+.menu_col3 {
+	margin: 0px 25px 0px 25px
+}
+
+.coffee_menu{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.menu_container h3 {
+	letter-spacing: 1px;
+	font-weight: 100;
+	color: #BB2403;
+}
+
+.shop-item{
+	display: flex;
+	letter-spacing: 1px;
+}
+
+.addCart-button{
+	margin-left: 10px;
+}
+
+.center{
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 24px;
+	border-collapse: collapse;
+}
+
+td{
+	padding: 15px;
+}
+
+tr.line1{
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	border-collapse: collapse;
+}
+.line2{
+	border-bottom: 1px solid black;
+	border-collapse: collapse;
+	font-weight: bold;
+}
+td[rowspan]{
+	vertical-align: top;
+	text-align: left;
+}
+.price-type{
+	text-align: center;
+	vertical-align: middle;
+}
+.line{
+	border-bottom: 1px solid black;
+	border-collapse: collapse;
+}
+
+.cart-information{
+	display: flex;
+}
+
+.cart-column {
+    display: flex;
+	flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-item {
+    width: 45%;
+	font-size: 16px;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 16px;
+}
+
+.cart-quantity {
+    width: 35%;
+	font-size: 16px;
+}
+
+.cart-item-title {
+    color: rgb(44, 43, 43);
+    margin-left: .5em;
+    font-size: 19px;
+	font-weight: bold
+}
+
+.remove-button {
+    color: rgb(44, 43, 43);
+    background-color: beige;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.remove-button:hover {
+    background-color: #CC4C4C;
+	color: white;
+}
+
+.input-qty {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 19px;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    margin-top: 10px;
+    margin-right: 10px;
+	display: flex;
+	justify-content: end;
+	flex-direction: column;
+}
+
+.cart-total-title-price{
+	display: flex;
+	justify-content: space-between;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: solid black;
+    font-size: 24px;
+}
+
+.btn-purchase {
+    display: block;
+    font-size: 20px;
+	font-weight: bold;
+	color: white;
+	background-color: #BB2403;
+	margin-top: 20px;
+}
+
+.cart-container{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin-bottom: 50px;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+
+.cart-container h2{
+	font-size: 25px;
+	font-weight: 100;
+	color: #BB2403;
+	letter-spacing: 1px;
+	padding-left: 20px;
+}
+
+.cart_intro hr{
+	background: black;
+	border: none;
+	height: 10px;
+	margin-top: 0px;
+}
+
+.cart-title{
+	display: flex;
+	margin-top: -12px;
+}
+
+.reference_list{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+}
+
+.reference_list cite{
+	word-break: break-all;
+	padding-top: 20px;
+}
+
+.payment-input{
+	width: 100%;
+	padding: 10px;
+}
+
+.payment-input img{
+	padding: 4px;
+}
+
+#card_number{
+	width: 74%;
+}
+
+#cvv{
+	text-align: center;
+	width: 25%;
+}
+
+#card_month{
+	width: 20%;
+	text-align: center;
+}
+
+#card_year{
+	width: 20%;
+	text-align: center;
+}
+
+.payment_submit_button{
+	width: 100%;
+}
